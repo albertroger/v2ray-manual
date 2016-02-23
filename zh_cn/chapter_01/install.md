@@ -31,3 +31,7 @@ bash <(curl -L -s https://raw.githubusercontent.com/v2ray/v2ray-core/master/rele
 1. 编辑 /etc/v2ray/config.json 文件来配置你需要的代理方式；
 1. 运行 service v2ray start 来启动 V2Ray 进程；
 1. 之后可以使用 service v2ray start|stop|status|reload|restart|force-reload 控制 V2Ray 的运行。
+
+## Docker
+V2Ray 已经提供了用于构建镜像的 Dockerfile([link](https://github.com/v2ray/v2ray-core/blob/master/tools/docker/Dockerfile)), 您可以运行 [`run.sh`](https://github.com/v2ray/v2ray-core/blob/master/tools/docker/run.sh) 来自行构建镜像。
+你也可以直接运行 `docker run -d --name=v2ray -p 27183:27183 aliuwr/v2ray` 来使用由 [CzBiX](https://github.com/CzBiX) 维护的镜像([link](https://hub.docker.com/r/aliuwr/v2ray/))。 
